@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+        <title>The Elden Dex</title>
+    </head>
+    <body>
+        <h1>The Elden Dex</h1>
+        <div class="search">
+            <form id="eldenForm" class="form">
+                <!-- <label for="search">Search</label> -->
+                <input class="input" type="text" name="search" id="search" placeholder="Search for a creature">
+                <button type="submit">search</button>
+            </form>
+            <div class="gallery"></div>
+        </div>
+        <script src="./app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js" integrity="sha256-EXPXz4W6pQgfYY3yTpnDa3OH8/EPn16ciVsPQ/ypsjk=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.8.3/dist/instantsearch.production.min.js" integrity="sha256-LAGhRRdtVoD6RLo2qDQsU2mp+XVSciKRC8XPOBWmofM=" crossorigin="anonymous"></script>
+
+    </body>
+</html>
