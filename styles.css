@@ -31,7 +31,6 @@ input {
 
 .gallery {
     width: 90%;
-    margin: 12vh 50%;
     transform: translateX(-50);
     display: grid;
     grid-template-columns: repeat(5, 200px);
@@ -53,11 +52,22 @@ img {
     cursor: pointer;
 }
 
-p {
-    position: absolute;
+p, details {
+    /* position: absolute; */
     margin-left: 10px;
     bottom: 5px;
+    /* color: white; */
+}
+
+h1 {
+    position: absolute
+}
+
+h4 {
+    position: absolute;
+    margin-left: 10px;
     color: white;
+    background-color: black;
 }
 
 a{

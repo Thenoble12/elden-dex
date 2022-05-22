@@ -4,20 +4,39 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
         <script src="index.js"></script>
         <title>The Elden Dex</title>
     </head>
     <body>
-        <h1>The Elden Dex</h1>
-        <div class="search">
-            <form id="eldenForm" class="form">
-                <!-- <label for="search">Search</label> -->
-                <input class="input" type="text" name="search" id="search" placeholder="Search for a creature">
-                <button type="submit">search</button>
-            </form>
-            <div class="gallery"></div>
+        <div class="header">
+            <h1>The Elden Dex</h1>
         </div>
+        <div class="search">
+            <form id="eldenForm" class="form">                
+                <select name="category" id="category"> 
+                    <option value="" disabled selected>Select Category</option>                   
+                    <option value="ammos">Ammos</option>
+                    <option value="armors">Armors</option>
+                    <option value="ashes">Ashes of War</option>
+                    <option value="bosses">Bosses</option>
+                    <option value="classes">Classes</option>
+                    <option value="creatures">Creatures</option>
+                    <option value="incantations">Incantations</option>
+                    <option value="items">Items</option><
+                    <option value="locations">Locations</option>
+                    <option value="npcs">Npcs</option>
+                    <option value="shields">Shields</option>
+                    <option value="sorceries">Sorceries</option>
+                    <option value="sprits">Sprits</option><
+                    <option value="talismans">Talismans</option>
+                    <option value="weapons">Weapons</option>
+                </select>
+                <input class="input" type="text" name="search" id="search" placeholder="">
+                <button type="submit">search</button>
+            </form>            
+        </div>
+        <div class="gallery"></div>
         <script src="./app.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js" integrity="sha256-EXPXz4W6pQgfYY3yTpnDa3OH8/EPn16ciVsPQ/ypsjk=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.8.3/dist/instantsearch.production.min.js" integrity="sha256-LAGhRRdtVoD6RLo2qDQsU2mp+XVSciKRC8XPOBWmofM=" crossorigin="anonymous"></script>
