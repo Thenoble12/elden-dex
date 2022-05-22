@@ -1,16 +1,18 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;   
 }
 
-body {
+body {  
     min-height: 100vh;
     overflow-x: hidden;
+    background-image: url("images/Elden-Ring-Background.jpg");
+    /* background-repeat: no-repeat; */
+    background-position: top;
 }
 
-.search {
-    position: fixed;
+.search {    
     top: 0;
     left: 0;
     width: 100vw;
@@ -20,13 +22,26 @@ body {
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0, .3);
     z-index: 1;
-    background: white;
+    background: black;
+}
+
+select {
+    width: 150px; 
+    height: 30px; 
+    background-color:rgba(255, 217, 0, 0.541)     
 }
 
 input {
     padding: 0.5rem;
     outline: none;
     font-size: 1rem;
+    width: 500px;
+}
+
+button {
+    width: 90px;
+    height: 30px; 
+    background-color:rgba(255, 217, 0, 0.541)  
 }
 
 .gallery {
@@ -40,27 +55,37 @@ input {
 }
 
 .gallery div {
-    position: relative
+    position: relative;
+    border-style: double;
+    border-width: medium;
+    border-color: rgba(255, 217, 0, 0.541);
+    background-color: rgb(6, 26, 2);
 }
 
 img {
-    margin-left: 5px;
+    /* margin-right: 15px; */
     height: 300px;
-    width: 200px;
+    width: 195px;
     object-fit: cover;
     object-position: center;
     cursor: pointer;
+    background-color: rgb(6, 26, 2);
 }
 
 p, details {
     /* position: absolute; */
     margin-left: 10px;
     bottom: 5px;
-    /* color: white; */
+    color: white;   
 }
 
 h1 {
-    position: absolute
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: rgba(255, 217, 0, 0.541);
+    min-height: 10vh;
+    font-size: 50px;
 }
 
 h4 {
@@ -71,7 +96,7 @@ h4 {
 }
 
 a{
-    position: absolute;
+    position: absolute; 
     top: 0;
     left: 0;
     text-decoration: underline;
@@ -79,3 +104,4 @@ a{
     margin-left: 10px;
     font-weight: bold;
 }
+
