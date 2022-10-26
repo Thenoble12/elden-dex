@@ -58,6 +58,7 @@ button:hover {
 }
 
 .gallery div {
+    margin-top: 20px;
     position: relative;
     border-style: double;
     border-width: medium;
@@ -70,6 +71,10 @@ button:hover {
     border-width: medium;
     box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
     transform: translate3d(0px, -5px, 0px);
+}
+
+.gallery-container {
+    margin-top: 100px;
 }
 
 img {
@@ -90,8 +95,10 @@ p, details {
 }
 
 h1 {
+    margin-top: 56px;
     top: 0;
     left: 0;
+    margin-left: 125px;
     position: absolute;
     color: rgba(255, 217, 0, 0.541);
     min-height: 10vh;
@@ -115,3 +122,8 @@ a{
     font-weight: bold;
 }
 
+form {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    position: relative;
+}
